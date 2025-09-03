@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>special day</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="/page2.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+<!-- Background Video -->
+  <video id="background-video" autoplay muted loop playsinline>
+    <source src="/bg.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+<class="min-h-screen magical-gradient overflow-hidden flex items-center justify-center">
+    <div class="container mx-auto px-4 py-8 relative">
+        <!-- Content Container -->
+        <div class="max-w-2xl mx-auto">
+            <!-- GIF Display -->
+            <div id="gifContainer" class="glass-effect p-6 mb-6 text-center floating flex justify-between items-center">
+                <div class="gif-container mx-auto">
+                    <img src="/api/placeholder/300/300" alt="Pookie Bear GIF" id="gifDisplay">
+                </div>
+                <div id="wishContainer" class="glass-effect p-6 text-center ml-6">
+                    <p id="wishText" class="text-1.5xl md:text-3xl text-black-500 font-semibold">Happy Birthday 🎂</p>
+                </div>
+            </div>
+
+            <!-- Love Note Display -->
+            <div id="noteContainer" class="glass-effect p-6 mb-6 text-center">
+                <p id="noteText" class="text-xl md:text-4xl text-white font-semibold"></p>
+            </div>
+
+            <!-- Navigation -->
+            <div class="text-center">
+                <button id="nextButton" class="glass-effect px-8 py-4 text-xl font-bold text-white rounded-full transition-all duration-300 hover:scale-110 hover:shadow-lg group beating">
+                    <span class="inline-block transition-transform group-hover:translate-x-2">Click me 👉👈</span>
+                </button>
+            </div>
+
+            <!-- Progress Indicator -->
+            <div class="mt-6 flex justify-center gap-2">
+                <div id="progressDots" class="flex space-x-2"></div>
+            </div>
+        </div>
+
+        <!-- Next Page Button -->
+        <div class="text-center mt-6">
+            <button id="nextPageButton" class="glass-effect px-8 py-4 text-xl font-bold text-white rounded-full transition-all duration-300 hover:scale-110 hover:shadow-lg group beating hidden">
+                <span class="inline-block transition-transform group-hover:translate-x-2">Surprise</span>
+            </button>
+        </div>
+    </div>
+
+          
+    <script src="./page2.js"></script>       
+</body>
+</html>
